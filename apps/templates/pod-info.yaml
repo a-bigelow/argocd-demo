@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://stefanprodan.github.io/podinfo'
-    targetRevision: '5.2.1'
+    targetRevision: '6.5.4'
     chart: podinfo
     helm:
       valueFiles:
