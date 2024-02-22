@@ -11,8 +11,8 @@ spec:
     chart: podinfo
     helm:
       values: |
-        key: ui.message
-        value: {{ .Values.podInfo.message }}
+        ui:
+          message: {{ .Values.podInfo.message }}
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
