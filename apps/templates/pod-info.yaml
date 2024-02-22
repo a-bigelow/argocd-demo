@@ -9,9 +9,10 @@ spec:
     repoURL: 'https://stefanprodan.github.io/podinfo'
     targetRevision: '6.5.4'
     chart: podinfo
-{{/*    helm:*/}}
-{{/*      valueFiles:*/}}
-{{/*        - "{{ .Values.valuesFile }}"*/}}
+    helm:
+      values: |
+        key: ui.message
+        value: {{ .Values.podInfo.message }}
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
