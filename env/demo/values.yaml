@@ -1,4 +1,4 @@
 podInfo:
   message: "Ping Pong"
 opsDashboard:
-  enabled: false
+  enabled: true
