@@ -18,9 +18,9 @@ spec:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: podinfo
-  syncOptions:
-    - CreateNamespace=true
   syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
