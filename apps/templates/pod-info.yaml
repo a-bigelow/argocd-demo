@@ -21,6 +21,11 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+    managedNamespaceMetadata:
+      annotations:
+        istio-injection: enabled
+      labels:
+        ping: pong
     automated:
       prune: true
       selfHeal: true

@@ -18,6 +18,11 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+    managedNamespaceMetadata:
+      annotations:
+        istio-injection: enabled
+      labels:
+        marco: polo
     automated:
       prune: true
       selfHeal: true
