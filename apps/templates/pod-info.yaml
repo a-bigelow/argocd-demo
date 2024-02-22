@@ -9,9 +9,9 @@ spec:
     repoURL: 'https://stefanprodan.github.io/podinfo'
     targetRevision: '5.2.1'
     chart: podinfo
-{{/*    helm:*/}}
-{{/*      valueFiles:*/}}
-{{/*        - values.yaml*/}}
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
