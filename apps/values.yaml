@@ -1,4 +1,15 @@
+# Pod Info
 podInfo:
-  message: "Marco"
+  enabled: true
+  ui:
+    message: "Marco"
+
+# Kube Ops View
 opsDashboard:
   enabled: false
+
+# Argo CD
+argo:
+  configs:
+    cm:
+      timeout.reconciliation: 10s

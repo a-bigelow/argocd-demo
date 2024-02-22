@@ -1,4 +1,6 @@
 podInfo:
-  message: "Hello World!"
+  ui:
+    message: "Hello World!"
+    color: "#7c3474"
 opsDashboard:
   enabled: true

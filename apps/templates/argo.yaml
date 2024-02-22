@@ -13,9 +13,7 @@ spec:
     chart: argo-cd
     helm:
       values: |
-        configs:
-          cm:
-            timeout.reconciliation: 10s
+              {{- toYaml .Values.argo | nindent 8 }}
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default

@@ -1,3 +1,4 @@
+{{ if .Values.podInfo.enabled }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -13,8 +14,7 @@ spec:
     chart: podinfo
     helm:
       values: |
-        ui:
-          message: {{ .Values.podInfo.message }}
+              {{- toYaml .Values.podInfo | nindent 8 }}
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
@@ -22,3 +22,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  {{ end }}
