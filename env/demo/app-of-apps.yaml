@@ -9,6 +9,9 @@ spec:
     repoURL: 'https://github.com/a-bigelow/argocd-demo'
     path: apps
     targetRevision: HEAD
+    helm:
+      valueFiles:
+        - ../env/demo/values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
