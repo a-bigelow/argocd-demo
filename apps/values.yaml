@@ -1,2 +1,4 @@
 podInfo:
   message: "Marco"
+opsDashboard:
+  enabled: false
