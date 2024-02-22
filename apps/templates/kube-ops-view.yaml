@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: 'https://christianknell.github.io/helm-charts'
-    targetRevision: '23.5.0'
+    targetRevision: '3.5.0'
     chart: kube-ops-view
   destination:
     server: 'https://kubernetes.default.svc'
