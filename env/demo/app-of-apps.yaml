@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-        - env/demo/values.yaml
+        - ../env/demo/values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
