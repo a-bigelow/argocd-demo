@@ -1,2 +1,3 @@
+valuesFile: env/demo/values.yaml # It's us!
 ui:
   message: "Marco"
