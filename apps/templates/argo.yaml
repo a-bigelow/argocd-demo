@@ -14,7 +14,7 @@ spec:
               {{- toYaml .Values.argo | nindent 8 }}
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: default
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
