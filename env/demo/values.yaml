@@ -1,4 +1,4 @@
 podInfo:
   message: "Very Important Message"
 opsDashboard:
-  enabled: true
+  enabled: false
